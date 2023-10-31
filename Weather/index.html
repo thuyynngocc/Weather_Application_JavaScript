@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Tìm tên thành phố" class="input-box">
+
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+            </div>
+        </div>
+
+        <div class="location-not-found">
+            <h1>Xin lỗi, không có vị trí này!!!</h1>
+            <img src="/assets/404.png" alt="404 Error">
+        </div>
+
+        <div class="weather-body">
+            <img src="/assets/clouds.png" alt="Weather Image" class="weather-img">
+
+            <div class="weather-box">
+                <p class="temperature">0 <sup>°C</sup></p>
+                <p class="description">Mưa nhỏ</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Độ ẩm</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">12Km/H</span>
+                        <p>Tốc độ gió</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-sun"></i>
+                    <div class="text">
+                        <span id="uvIndex">45%</span>
+                        <p>Tia UV</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-sharp fa-regular fa-eye"></i>
+                    <div class="text">
+                        <span id="visibility">12Km/H</span>
+                        <p>Tầm nhìn</p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="sunrise-sunset">
+                <p id="sunrise">Mặt trời mọc:</p>
+                <p id="sunset">Mặt trời lặn:</p>
+            </div> -->
+              
+            <div class="hourly-temperature-container">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- <div class="daily-forecast">
+        <h2>Dự báo</h2>
+        <div class="daily-forecast-container" id="dailyForecast"></div>
+    </div> -->
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
+</body>
+</html>
